@@ -36,13 +36,19 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.3'
 	testImplementation 'org.springframework.security:spring-security-test'
+
+	// spring-boot-configuration-processor
+	implementation 'org.springframework.boot:spring-boot-configuration-processor'
+
+	// jwt 
+	implementation 'io.jsonwebtoken:jjwt-api:0.12.3'
+	reuntimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.3'
+	reuntimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.3'
 }
 
 tasks.named('bootBuildImage') {
 	builder = 'paketobuildpacks/builder-jammy-base:latest'
-	implementation 'io.jsonwebtoken:jjwt-api:0.12.3'
-	reuntimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.3'
-	reuntimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.3'
+	
 }
 
 tasks.named('test') {
