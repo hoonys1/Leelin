@@ -1,6 +1,6 @@
 package com.joeun.leelin.service;
 
-import com.joeun.server.dto.Users;
+import com.joeun.leelin.dto.Users;
 
 import jakarta.servlet.http.HttpServletRequest;
 

@@ -10,9 +10,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.stereotype.Service;
 
-import com.joeun.server.dto.UserAuth;
-import com.joeun.server.dto.Users;
-import com.joeun.server.mapper.UserMapper;
+import com.joeun.leelin.dto.UserAuth;
+import com.joeun.leelin.dto.Users;
+import com.joeun.leelin.mapper.UserMapper;
 
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
