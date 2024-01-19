@@ -1,9 +1,9 @@
-package com.joeun.springsecurity.mapper;
+package com.joeun.leelin.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.joeun.springsecurity.dto.UserAuth;
-import com.joeun.springsecurity.dto.Users;
+import com.joeun.leelin.dto.UserAuth;
+import com.joeun.leelin.dto.Users;
 
 @Mapper
 public interface UserMapper {

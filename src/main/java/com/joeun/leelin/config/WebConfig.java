@@ -1,4 +1,4 @@
-package com.joeun.springsecurity.config;
+package com.joeun.leelin.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

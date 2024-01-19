@@ -1,4 +1,4 @@
-package com.joeun.springsecurity.controller;
+package com.joeun.leelin.controller;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;

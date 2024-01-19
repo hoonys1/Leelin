@@ -1,4 +1,4 @@
-package com.joeun.springsecurity.dto;
+package com.joeun.leelin.dto;
 
 import lombok.Data;
 

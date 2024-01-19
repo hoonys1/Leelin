@@ -1,4 +1,4 @@
-package com.joeun.springsecurity.dto;
+package com.joeun.leelin.dto;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package com.joeun.springsecurity.controller;
+package com.joeun.leelin.controller;
 
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;

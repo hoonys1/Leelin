@@ -1,4 +1,4 @@
-package com.joeun.springsecurity.security;
+package com.joeun.leelin.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,9 +6,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
-import com.joeun.springsecurity.dto.CustomUser;
-import com.joeun.springsecurity.dto.Users;
-import com.joeun.springsecurity.mapper.UserMapper;
+import com.joeun.leelin.dto.CustomUser;
+import com.joeun.leelin.dto.Users;
+import com.joeun.leelin.mapper.UserMapper;
 
 import lombok.extern.slf4j.Slf4j;
 

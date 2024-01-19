@@ -1,4 +1,4 @@
-package com.joeun.springsecurity.controller;
+package com.joeun.leelin.controller;
 
 import java.security.Principal;
 import java.util.List;
@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.joeun.springsecurity.dto.Users;
-import com.joeun.springsecurity.service.UserService;
+import com.joeun.leelin.dto.Users;
+import com.joeun.leelin.service.UserService;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

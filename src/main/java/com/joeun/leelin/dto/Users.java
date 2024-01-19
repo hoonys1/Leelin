@@ -1,4 +1,4 @@
-package com.joeun.springsecurity.dto;
+package com.joeun.leelin.dto;
 
 import java.util.Date;
 import java.util.List;

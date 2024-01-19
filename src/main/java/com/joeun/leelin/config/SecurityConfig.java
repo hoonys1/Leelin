@@ -1,4 +1,4 @@
-package com.joeun.springsecurity.config;
+package com.joeun.leelin.config;
 
 import javax.sql.DataSource;
 
@@ -18,9 +18,9 @@ import org.springframework.security.web.authentication.AuthenticationSuccessHand
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 
-import com.joeun.springsecurity.security.CustomAccessDeniedHandler;
-import com.joeun.springsecurity.security.CustomUserDetailsService;
-import com.joeun.springsecurity.security.LoginSuccessHandler;
+import com.joeun.leelin.security.CustomAccessDeniedHandler;
+import com.joeun.leelin.security.CustomUserDetailsService;
+import com.joeun.leelin.security.LoginSuccessHandler;
 
 import lombok.extern.slf4j.Slf4j;
 

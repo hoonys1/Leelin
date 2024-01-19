@@ -1,4 +1,4 @@
-package com.joeun.springsecurity.common;
+package com.joeun.leelin.common;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
