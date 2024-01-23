@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -22,6 +22,10 @@ import com.joeun.leelin.security.jwt.provider.JwtTokenProvider;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * client ➡️ fliter ➡️ server
+ * ✅ username, password 인증 시도 (attemptAuthentication)
+ */
 @Slf4j
 public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
@@ -106,8 +110,8 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         log.info("인증 성공 (auth SUCCESS) : ");
 
         CustomUser user = ((CustomUser) authentication.getPrincipal());
-        int userNo = user.getUser().getNo();
-        String userId = user.getUser().getUserId();
+        int userNo = user.getUsers().getUserNo();
+        String userId = user.getUsers().getUserId();
 
         List<String> roles = user.getAuthorities()
                                 .stream()
@@ -121,15 +125,4 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         response.addHeader(SecurityConstants.TOKEN_HEADER, SecurityConstants.TOKEN_PREFIX + token);
         response.setStatus(200);
     }
-
-
-
-    
-
-    
-
-
-
-    
-    
 }

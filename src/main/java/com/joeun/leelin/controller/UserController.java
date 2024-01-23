@@ -1,10 +1,22 @@
 package com.joeun.leelin.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.annotation.Secured;
-import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.joeun.leelin.dto.CustomUser;
+import com.joeun.leelin.dto.Users;
+import com.joeun.leelin.service.UserService;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -45,7 +57,7 @@ public class UserController {
         log.info("::::: customUser :::::");
         log.info("customUser : "+ customUser);
 
-        Users user = customUser.getUser();
+        Users user = customUser.getUsers();
         log.info("user : " + user);
 
         // 인증된 사용자 정보 

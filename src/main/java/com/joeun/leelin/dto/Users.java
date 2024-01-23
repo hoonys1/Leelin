@@ -15,9 +15,25 @@ public class Users {
     private String email;
     private Date regDate;
     private Date updDate;
-    private int enabled;            // 휴면여부
+    // private int enabled;            // 휴면여부
 
     // 권한 목록
     List<UserAuth> authList;
+
+    public Users() {
+
+    }
+
+    public Users(Users user) {
+        this.userNo = user.getUserNo();
+        this.userId = user.getUserId();
+        this.userPw = user.getUserPw();
+        this.userPwCheck = user.getUserPwCheck();
+        this.name = user.getName();
+        this.email = user.getEmail();
+        this.regDate = user.getRegDate();
+        this.updDate = user.getUpdDate();
+        // this.enabled = user.getEnabled();
+    }
 
 }

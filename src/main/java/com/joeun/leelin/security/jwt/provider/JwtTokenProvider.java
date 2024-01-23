@@ -120,7 +120,7 @@ public class JwtTokenProvider {
 
 
             Users user = new Users();
-            user.setNo(no);
+            user.setUserNo(no);
             user.setUserId(userId);
             // OK: 권한도 바로 Users 객체에 담아보기
             List<UserAuth> authList = ((List<?>) roles )

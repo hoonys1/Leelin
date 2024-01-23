@@ -2,10 +2,11 @@ package com.joeun.leelin.security.jwt.filter;
 
 import java.io.IOException;
 
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.Authentication;
@@ -14,8 +15,6 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.joeun.leelin.security.jwt.constants.SecurityConstants;
 import com.joeun.leelin.security.jwt.provider.JwtTokenProvider;
-
-import lombok.extern.slf4j.Slf4j;
 
 
 @Slf4j
@@ -30,7 +29,11 @@ public class JwtRequestFilter extends OncePerRequestFilter {
         this.jwtTokenProvider = jwtTokenProvider;
     }
     
-        
+    
+    /**
+     * jwt 요청 필터
+     * - request > headers > Authorization (💍JWT)
+     */
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
@@ -61,7 +64,6 @@ public class JwtRequestFilter extends OncePerRequestFilter {
             // SecurityContextHolder(사용자 보안정보를 담는 객체)에
             // Authentication(사용자 인증 정보) 객체를 설정
             SecurityContextHolder.getContext().setAuthentication(authentication);
-
         }
         
         // 다음 필터로 진행

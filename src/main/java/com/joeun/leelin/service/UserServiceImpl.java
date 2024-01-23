@@ -96,7 +96,4 @@ public class UserServiceImpl implements UserService {
         int result = userMapper.delete(userId);
         return result;
     }
-
-    
-    
 }
