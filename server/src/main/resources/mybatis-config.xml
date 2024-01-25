@@ -17,11 +17,11 @@
 		<!-- 
 			
 		-->
-		<typeAlias alias="Users"  type="com.joeun.leelin.dto.Users"/>
-		<typeAlias alias="UserAuth"  type="com.joeun.leelin.dto.UserAuth"/>
+		<typeAlias alias="Users"  type="com.joeun.server.dto.Users"/>
+		<typeAlias alias="UserAuth"  type="com.joeun.server.dto.UserAuth"/>
 		
 		<!-- 테이블과 매핑할 DTO가 있는 패키지 경로 지정 -->
-		<package name="com.joeun.leelin.dto"/>
+		<package name="com.joeun.server.dto"/>
 	</typeAliases>
 
 

@@ -4,12 +4,12 @@
 For further reference, please consider the following sections:
 
 * [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.1.7/gradle-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.1.7/gradle-plugin/reference/html/#build-image)
-* [Thymeleaf](https://docs.spring.io/spring-boot/docs/3.1.7/reference/htmlsingle/index.html#web.servlet.spring-mvc.template-engines)
-* [Spring Security](https://docs.spring.io/spring-boot/docs/3.1.7/reference/htmlsingle/index.html#web.security)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/3.1.7/reference/htmlsingle/index.html#web)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/3.1.7/reference/htmlsingle/index.html#using.devtools)
+* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.1.8/gradle-plugin/reference/html/)
+* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.1.8/gradle-plugin/reference/html/#build-image)
+* [Thymeleaf](https://docs.spring.io/spring-boot/docs/3.1.8/reference/htmlsingle/index.html#web.servlet.spring-mvc.template-engines)
+* [Spring Security](https://docs.spring.io/spring-boot/docs/3.1.8/reference/htmlsingle/index.html#web.security)
+* [Spring Web](https://docs.spring.io/spring-boot/docs/3.1.8/reference/htmlsingle/index.html#web)
+* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/3.1.8/reference/htmlsingle/index.html#using.devtools)
 * [MyBatis Framework](https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)
 
 ### Guides
